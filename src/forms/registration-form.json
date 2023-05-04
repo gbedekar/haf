@@ -1,0 +1,73 @@
+{
+	"id": "L2NvbnRlbnQvZm9ybXMvYWYvcmVnaXN0cmF0aW9uZm9ybQ==",
+	"fieldType": "form",
+	"action": "/adobe/forms/af/submit/L2NvbnRlbnQvZm9ybXMvYWYvcmVnaXN0cmF0aW9uZm9ybQ==",
+	"lang": "en",
+	"properties": {
+		"fd:dor": {
+			"dorType": "none"
+		},
+		"fd:path": "/content/forms/af/registrationform/jcr:content/guideContainer",
+		"fd:schemaType": "BASIC"
+	},
+	"items": [{
+		"id": "textinput-1e3efd8dd0",
+		"fieldType": "text-input",
+		"name": "firstName",
+		"visible": true,
+		"type": "string",
+		"required": false,
+		"enabled": true,
+		"readOnly": false,
+		"autoComplete": "off",
+		"label": {
+			"visible": true,
+			"richText": false,
+			"value": "Your Name"
+		},
+		"events": {
+			"custom:setProperty": ["$event.payload"]
+		},
+		"properties": {
+			"fd:dor": {
+				"dorExclusion": false
+			},
+			"fd:path": "/content/forms/af/registrationform/jcr:content/guideContainer/textinput"
+		},
+		":type": "rect/components/adaptiveForm/textinput"
+	}, {
+		"id": "textinput-8f10eeab21",
+		"fieldType": "text-input",
+		"name": "address",
+		"visible": true,
+		"type": "string",
+		"required": false,
+		"enabled": true,
+		"readOnly": false,
+		"autoComplete": "off",
+		"label": {
+			"visible": true,
+			"richText": false,
+			"value": "Your Address"
+		},
+		"events": {
+			"custom:setProperty": ["$event.payload"]
+		},
+		"properties": {
+			"fd:dor": {
+				"dorExclusion": false
+			},
+			"fd:path": "/content/forms/af/registrationform/jcr:content/guideContainer/textinput_1075153794"
+		},
+		":type": "rect/components/adaptiveForm/textinput"
+	}],
+	"events": {
+		"custom:setProperty": ["$event.payload"]
+	},
+	"metadata": {
+		"version": "1.0.0",
+		"grammar": "json-formula-1.0.0"
+	},
+	"adaptiveform": "0.11.0-Pre",
+	":type": "rect/components/adaptiveForm/formcontainer"
+}
